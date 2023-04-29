@@ -16,6 +16,7 @@ options:
 
 patch:
 	patch -p1 < ./diff/config.diff
+	patch -p1 < ./diff/dwm-systray-6.4.diff
 
 .c.o:
 	${CC} -c ${CFLAGS} $<
