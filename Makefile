@@ -14,6 +14,9 @@ options:
 	@echo "LDFLAGS  = ${LDFLAGS}"
 	@echo "CC       = ${CC}"
 
+patch:
+	patch -p1 < ./diff/config.diff
+
 .c.o:
 	${CC} -c ${CFLAGS} $<
 
